@@ -3,11 +3,11 @@ resource "aws_nat_gateway" "ngw1" {
   subnet_id = aws_subnet.public_1.id
 
   depends_on = [
-    aws_internet_gateway.ig
+    aws_internet_gateway.igw
   ]
 
   tags = {
-    Name = "#{var.app_name}-ngw1"
+    Name = "${var.app_name}-ngw1"
     }
 }
 
@@ -16,10 +16,10 @@ resource "aws_nat_gateway" "ngw2" {
   subnet_id = aws_subnet.public_2.id
 
   depends_on = [
-    aws_internet_gateway.ig
+    aws_internet_gateway.igw
   ]
 
   tags = {
-    Name = "#{var.app_name}-ngw2"
+    Name = "${var.app_name}-ngw2"
     }
 }
