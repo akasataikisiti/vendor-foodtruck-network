@@ -8,7 +8,7 @@ resource "aws_nat_gateway" "ngw1" {
 
   tags = {
     Name = "${var.app_name}-ngw1"
-    }
+  }
 }
 
 resource "aws_nat_gateway" "ngw2" {
@@ -21,5 +21,5 @@ resource "aws_nat_gateway" "ngw2" {
 
   tags = {
     Name = "${var.app_name}-ngw2"
-    }
+  }
 }
