@@ -1,3 +1,1 @@
 # vendor-network
-
-test
